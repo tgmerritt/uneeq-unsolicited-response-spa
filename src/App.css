@@ -1,10 +1,15 @@
 .App {
-    text-align: center;
+    /* text-align: center; */
+    /* display: flex; */
 }
 
 .App-logo {
-    height: 40vmin;
+    height: 25vmin;
     pointer-events: none;
+}
+
+.App-row {
+    flex-flow: row nowrap;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -15,9 +20,9 @@
 
 .App-header {
     display: flex;
-    flex-direction: column;
+    flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: calc(10px + 2vmin);
 }
 
@@ -27,6 +32,9 @@
 
 .App-content {
     font-size: calc(10px + 2vmin);
+    /* display: flex;
+    align-items: center;
+    flex-flow: column nowrap; */
 }
 
 .App-content > div,

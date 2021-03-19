@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import useTheme from "../../hooks/useTheme";
+import useTheme from "../../hooks/useTheme"; // Allow them switching Light / Dark
 import useTodoList from "../../hooks/useTodoList";
-import logo from "../../logo.svg";
+import logo from "../../logo.png";
 
 export default function Home() {
     const [, { toggle }] = useTheme();

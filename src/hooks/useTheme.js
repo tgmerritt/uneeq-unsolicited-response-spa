@@ -2,7 +2,7 @@ import { useMemo, useRef, useCallback } from "react";
 
 const THEME = "dark-theme";
 
-function setTheme(isDark = false) {
+function setTheme(isDark = true) { // Default is false to start with Light theme
     const theme = isDark ? THEME : "";
     document.getElementsByTagName("html")[0].className = theme;
     window.localStorage.setItem(THEME, theme);
